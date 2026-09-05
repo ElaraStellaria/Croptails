@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dmng0y6272h6c"]
+
+[ext_resource type="Texture2D" uid="uid://bswxcm6sm22wj" path="res://assets/game/characters/Basic Charakter Spritesheet.png" id="1_7uws0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t61fv"]
+atlas = ExtResource("1_7uws0")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_686vu"]
+atlas = ExtResource("1_7uws0")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hss88"]
+atlas = ExtResource("1_7uws0")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qd3e3"]
+atlas = ExtResource("1_7uws0")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7b7a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t61fv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_686vu")
+}],
+"loop": 1,
+"name": &"idle_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hss88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qd3e3")
+}],
+"loop": 1,
+"name": &"idle_front",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=875955773]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=990527589]
+sprite_frames = SubResource("SpriteFrames_g7b7a")
+animation = &"idle_back"
+autoplay = "idle_front"
+frame = 1
+frame_progress = 0.89935756
