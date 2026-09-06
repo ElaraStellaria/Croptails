@@ -2,8 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://bswxcm6sm22wj" path="res://assets/game/characters/Basic Charakter Spritesheet.png" id="1_7uws0"]
 [ext_resource type="Texture2D" uid="uid://oi011goodlkb" path="res://assets/game/characters/Basic Charakter Actions.png" id="1_t61fv"]
-[ext_resource type="Script" uid="uid://ts6w1rrej2q3" path="res://scripts/state_machine/node_state_machine.gd" id="3_hss88"]
-[ext_resource type="Script" uid="uid://b8gcx3ja8sh4n" path="res://scenes/characters/player/idle_state.gd" id="4_qd3e3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6avc5"]
 atlas = ExtResource("1_t61fv")
@@ -402,12 +400,3 @@ autoplay = "idle_front"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1061672582]
 position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_g7b7a")
-
-[node name="StateMsching" type="Node" parent="." unique_id=2121697945 node_paths=PackedStringArray("initial_node_state")]
-script = ExtResource("3_hss88")
-initial_node_state = NodePath("Idle")
-
-[node name="Idle" type="Node" parent="StateMsching" unique_id=1049476551 node_paths=PackedStringArray("player", "animated_sprite_2d")]
-script = ExtResource("4_qd3e3")
-player = NodePath("../..")
-animated_sprite_2d = NodePath("../../AnimatedSprite2D")
