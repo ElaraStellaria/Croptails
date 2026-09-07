@@ -8,6 +8,7 @@
 position = Vector2(129, 280)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
+shape_visible = false
 action = "walk_right"
 
 [node name="left" type="TouchScreenButton" parent="." unique_id=1376688703]
@@ -27,3 +28,9 @@ position = Vector2(94, 242)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
 action = "walk_up"
+
+[node name="hit" type="TouchScreenButton" parent="." unique_id=1707618098]
+position = Vector2(547, 280)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+action = "hit"
