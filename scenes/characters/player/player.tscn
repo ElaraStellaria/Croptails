@@ -398,6 +398,7 @@ animations = [{
 radius = 5.0990195
 
 [node name="Player" type="CharacterBody2D" unique_id=875955773]
+collision_layer = 2
 script = ExtResource("1_mk55u")
 current_tool = 3
 
