@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://bfgyyax1kcgff" path="res://assets/game/objects/Basic_Grass_Biom_things.png" id="3_pi5w0"]
 [ext_resource type="PackedScene" uid="uid://dbbthp3ec1lx2" path="res://scenes/houses/large_house.tscn" id="4_0b0mn"]
 [ext_resource type="Texture2D" uid="uid://b6fk70ff8bv1p" path="res://assets/game/tilesets/Tilled_Dirt_Wide.png" id="4_ow828"]
+[ext_resource type="PackedScene" uid="uid://cj38nfrggcrih" path="res://scenes/houses/normal_house.tscn" id="5_pi5w0"]
+[ext_resource type="PackedScene" uid="uid://cf6jv001cl3gy" path="res://scenes/houses/small_house.tscn" id="6_ow828"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbdxd"]
 texture = ExtResource("1_xwv23")
@@ -259,6 +261,8 @@ texture = ExtResource("3_pi5w0")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_pi5w0"]
 scenes/1/scene = ExtResource("4_0b0mn")
+scenes/2/scene = ExtResource("5_pi5w0")
+scenes/3/scene = ExtResource("6_ow828")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwv23"]
 texture = ExtResource("4_ow828")
