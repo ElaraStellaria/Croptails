@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b80bkpmy050rd"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_yuf8s"]
+
+[node name="Ui Mobile" type="CanvasLayer" unique_id=624324619]
+
+[node name="right" type="TouchScreenButton" parent="." unique_id=2141294153]
+position = Vector2(129, 280)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+shape_visible = false
+action = "walk_right"
+
+[node name="left" type="TouchScreenButton" parent="." unique_id=1376688703]
+position = Vector2(59, 280)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+action = "walk_left"
+
+[node name="down" type="TouchScreenButton" parent="." unique_id=1874985176]
+position = Vector2(94, 318)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+action = "walk_down"
+
+[node name="up" type="TouchScreenButton" parent="." unique_id=738181224]
+position = Vector2(94, 242)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+action = "walk_up"
+
+[node name="hit" type="TouchScreenButton" parent="." unique_id=1707618098]
+position = Vector2(547, 280)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_yuf8s")
+action = "hit"
