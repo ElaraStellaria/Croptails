@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b6fk70ff8bv1p" path="res://assets/game/tilesets/Tilled_Dirt_Wide.png" id="4_ow828"]
 [ext_resource type="PackedScene" uid="uid://cj38nfrggcrih" path="res://scenes/houses/normal_house.tscn" id="5_pi5w0"]
 [ext_resource type="PackedScene" uid="uid://cf6jv001cl3gy" path="res://scenes/houses/small_house.tscn" id="6_ow828"]
+[ext_resource type="PackedScene" uid="uid://daqioup2gawtu" path="res://scenes/objects/trees/small_tree.tscn" id="7_4agr7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbdxd"]
 texture = ExtResource("1_xwv23")
@@ -260,9 +261,11 @@ texture = ExtResource("3_pi5w0")
 1:3/0 = 0
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_pi5w0"]
+resource_name = "Houses"
 scenes/1/scene = ExtResource("4_0b0mn")
 scenes/2/scene = ExtResource("5_pi5w0")
 scenes/3/scene = ExtResource("6_ow828")
+scenes/4/scene = ExtResource("7_4agr7")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwv23"]
 texture = ExtResource("4_ow828")
