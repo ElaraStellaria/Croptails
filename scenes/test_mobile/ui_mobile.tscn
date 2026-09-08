@@ -2,34 +2,42 @@
 
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_yuf8s"]
 
-[node name="Ui Mobile" type="CanvasLayer" unique_id=624324619]
+[node name="Control" type="Control" unique_id=129392895]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="right" type="TouchScreenButton" parent="." unique_id=2141294153]
+[node name="Ui Mobile" type="CanvasLayer" parent="." unique_id=624324619]
+
+[node name="right" type="TouchScreenButton" parent="Ui Mobile" unique_id=2141294153]
 position = Vector2(129, 280)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
 shape_visible = false
 action = "walk_right"
 
-[node name="left" type="TouchScreenButton" parent="." unique_id=1376688703]
+[node name="left" type="TouchScreenButton" parent="Ui Mobile" unique_id=1376688703]
 position = Vector2(59, 280)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
 action = "walk_left"
 
-[node name="down" type="TouchScreenButton" parent="." unique_id=1874985176]
+[node name="down" type="TouchScreenButton" parent="Ui Mobile" unique_id=1874985176]
 position = Vector2(94, 318)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
 action = "walk_down"
 
-[node name="up" type="TouchScreenButton" parent="." unique_id=738181224]
+[node name="up" type="TouchScreenButton" parent="Ui Mobile" unique_id=738181224]
 position = Vector2(94, 242)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
 action = "walk_up"
 
-[node name="hit" type="TouchScreenButton" parent="." unique_id=1707618098]
+[node name="hit" type="TouchScreenButton" parent="Ui Mobile" unique_id=1707618098]
 position = Vector2(547, 280)
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("1_yuf8s")
