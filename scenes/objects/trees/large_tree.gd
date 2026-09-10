@@ -9,9 +9,8 @@ func _ready() -> void:
 	hurt_component.hurt.connect(on_hurt)
 	damage_component.mix_damage_reached.connect(mix_damage_reached)
 	
-func on_hurt(hit_damage: int) -> void:
+func on_hurt(hit_damage : int) -> void:
 	damage_component.apple_damage(hit_damage)
-
 	
 func mix_damage_reached() -> void:
 	call_deferred("add_log_scene")

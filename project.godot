@@ -75,6 +75,7 @@ rendering/root_node_layout_direction=1
 2d_physics/layer_3=" intractable"
 2d_physics/layer_4="tools"
 2d_physics/layer_5="objects"
+2d_physics/layer_6="collectable"
 
 [physics]
 
