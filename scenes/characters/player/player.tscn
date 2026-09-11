@@ -409,10 +409,8 @@ current_tool = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=990527589]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_g7b7a")
-animation = &"chopping_front"
+animation = &"idle_front"
 autoplay = "idle_front"
-frame = 1
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1061672582]
 position = Vector2(0, -5)
