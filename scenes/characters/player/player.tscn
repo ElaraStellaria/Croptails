@@ -402,6 +402,8 @@ radius = 5.0
 radius = 3.0
 
 [node name="Player" type="CharacterBody2D" unique_id=875955773]
+y_sort_enabled = true
+position = Vector2(0, 6)
 collision_layer = 2
 script = ExtResource("1_mk55u")
 current_tool = 1
@@ -413,6 +415,7 @@ animation = &"idle_front"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1061672582]
+y_sort_enabled = true
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_a8qts")
 
