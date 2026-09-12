@@ -86,7 +86,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7b7a"]
-size = Vector2(16, 16)
+size = Vector2(16, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gyc6d"]
 size = Vector2(12, 35)
@@ -99,6 +99,7 @@ sprite_frames = SubResource("SpriteFrames_g7b7a")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1374616351]
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_g7b7a")
 
 [node name="IntractableComponents" parent="." unique_id=1968407505 instance=ExtResource("3_1ugum")]

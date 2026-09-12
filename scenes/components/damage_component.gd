@@ -11,3 +11,5 @@ func apple_damage(damage: int) -> void:
 	
 	if current_damage == mix_damage:
 		mix_damage_reached.emit()
+	
+	

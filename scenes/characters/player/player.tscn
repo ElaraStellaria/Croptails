@@ -402,6 +402,8 @@ radius = 5.0
 radius = 3.0
 
 [node name="Player" type="CharacterBody2D" unique_id=875955773]
+y_sort_enabled = true
+position = Vector2(0, 6)
 collision_layer = 2
 script = ExtResource("1_mk55u")
 current_tool = 1
@@ -409,12 +411,11 @@ current_tool = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=990527589]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_g7b7a")
-animation = &"chopping_front"
+animation = &"idle_front"
 autoplay = "idle_front"
-frame = 1
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1061672582]
+y_sort_enabled = true
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_a8qts")
 
